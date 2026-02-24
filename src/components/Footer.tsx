@@ -1,121 +1,140 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
 import { Mail, Phone, MapPin, Linkedin, Youtube } from 'lucide-react';
 
-export default function Footer() {
+export function Footer() {
   const t = useTranslations('footer');
-  const nav = useTranslations('nav');
+  const locale = useLocale();
 
   return (
-    <footer className="bg-[#1a365d] text-white">
+    <footer className="bg-slate-900 text-slate-200">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">{t('company')}</h3>
-            <p className="text-gray-300">{t('tagline')}</p>
+            <div>
+              <h3 className="text-xl font-bold text-white">SCHIEBEL</h3>
+              <p className="text-sm text-slate-400">Antriebstechnik GmbH</p>
+            </div>
+            <p className="text-sm text-slate-400">
+              {t('tagline')}
+            </p>
             <div className="flex space-x-4">
-              <a
-                href="https://www.linkedin.com/company/schiebel-antriebstechnik-gmbh/"
-                target="_blank"
+              <a 
+                href="https://www.linkedin.com/company/schiebel-antriebstechnik-gmbh/" 
+                target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-[#f97316] transition-colors"
+                className="text-slate-400 hover:text-white transition-colors"
+                aria-label="LinkedIn"
               >
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="h-5 w-5" />
               </a>
-              <a
-                href="https://www.youtube.com/channel/UCWGCY0xrvppNBgqqpnwAZmA"
-                target="_blank"
+              <a 
+                href="https://www.youtube.com/channel/UCWGCY0xrvppNBgqqpnwAZmA" 
+                target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-[#f97316] transition-colors"
+                className="text-slate-400 hover:text-white transition-colors"
+                aria-label="YouTube"
               >
-                <Youtube className="h-6 w-6" />
+                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Contact */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">{t('quickLinks')}</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  {nav('aboutUs')}
-                </Link>
+            <h4 className="text-lg font-semibold text-white">{t('contact')}</h4>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 mt-0.5 text-slate-400 flex-shrink-0" />
+                <span>Josef Benc Gasse 4<br />1230 Vienna, Austria</span>
               </li>
-              <li>
-                <Link href="/quality" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  {nav('quality')}
-                </Link>
+              <li className="flex items-center gap-2">
+                <Phone className="h-4 w-4 text-slate-400" />
+                <a href="tel:+4316610" className="hover:text-white transition-colors">
+                  +43 1 66 108
+                </a>
               </li>
-              <li>
-                <Link href="/applications" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  {nav('applications')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/references" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  {nav('references')}
-                </Link>
+              <li className="flex items-center gap-2">
+                <Mail className="h-4 w-4 text-slate-400" />
+                <a href="mailto:info@schiebel-actuators.com" className="hover:text-white transition-colors">
+                  info@schiebel-actuators.com
+                </a>
               </li>
             </ul>
           </div>
 
           {/* Products */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">{nav('products')}</h3>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-semibold text-white">{t('products')}</h4>
+            <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/products/failsafe-series" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  {nav('failsafe')}
+                <Link href={`/${locale}/products/cm-series`} className="hover:text-white transition-colors">
+                  CM Series
                 </Link>
               </li>
               <li>
-                <Link href="/products/ab-series" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  {nav('abSeries')}
+                <Link href={`/${locale}/products/ab-series`} className="hover:text-white transition-colors">
+                  AB Series
                 </Link>
               </li>
               <li>
-                <Link href="/products/cm-series" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  {nav('cmSeries')}
+                <Link href={`/${locale}/products/failsafe-series`} className="hover:text-white transition-colors">
+                  Failsafe Series
                 </Link>
               </li>
               <li>
-                <Link href="/products/smartcon" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  {nav('smartcon')}
+                <Link href={`/${locale}/products/smartcon`} className="hover:text-white transition-colors">
+                  Smartcon
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">{t('contact')}</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-[#f97316] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300">Josef Benc Gasse 4, 1230 Vienna, Austria</span>
+            <h4 className="text-lg font-semibold text-white">{t('quickLinks')}</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href={`/${locale}/about`} className="hover:text-white transition-colors">
+                  {t('aboutUs')}
+                </Link>
               </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-[#f97316] flex-shrink-0" />
-                <a href="tel:+4316610 8" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  +43 1 66 108
-                </a>
+              <li>
+                <Link href={`/${locale}/applications`} className="hover:text-white transition-colors">
+                  {t('applications')}
+                </Link>
               </li>
-              <li className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-[#f97316] flex-shrink-0" />
-                <a href="mailto:info@schiebel-actuators.com" className="text-gray-300 hover:text-[#f97316] transition-colors">
-                  info@schiebel-actuators.com
-                </a>
+              <li>
+                <Link href={`/${locale}/references`} className="hover:text-white transition-colors">
+                  {t('references')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/contact`} className="hover:text-white transition-colors">
+                  {t('contactUs')}
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} SCHIEBEL Antriebstechnik. {t('rights')}</p>
+        {/* Bottom Bar */}
+        <div className="border-t border-slate-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-slate-400">
+            © {new Date().getFullYear()} SCHIEBEL Antriebstechnik GmbH. {t('rights')}
+          </p>
+          <div className="flex gap-6 text-sm text-slate-400">
+            <Link href={`/${locale}/privacy`} className="hover:text-white transition-colors">
+              {t('privacy')}
+            </Link>
+            <Link href={`/${locale}/imprint`} className="hover:text-white transition-colors">
+              {t('imprint')}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

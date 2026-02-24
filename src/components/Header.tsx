@@ -1,9 +1,9 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
-import { Link, usePathname } from '@/i18n/navigation';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { useState } from 'react';
-import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -12,48 +12,60 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { LanguageSwitcher } from './LanguageSwitcher';
+import { ChevronDown, Menu, Cog, Shield, Cpu, Settings, Layers, Info, Award } from 'lucide-react';
 
-export default function Header() {
+export function Header() {
   const t = useTranslations('nav');
   const locale = useLocale();
-  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  const productLinks = [
-    { href: '/products/failsafe-series', label: t('failsafe') },
-    { href: '/products/ab-series', label: t('abSeries') },
-    { href: '/products/cm-series', label: t('cmSeries') },
-    { href: '/products/smartcon', label: t('smartcon') },
-    { href: '/products/firmware', label: t('firmware') },
+  const aboutLinks = [
+    { href: `/${locale}/about`, label: t('about.company'), icon: Info },
+    { href: `/${locale}/quality`, label: t('about.quality'), icon: Award },
   ];
 
-  const aboutLinks = [
-    { href: '/about', label: t('aboutUs') },
-    { href: '/quality', label: t('quality') },
+  const productLinks = [
+    { href: `/${locale}/products/cm-series`, label: 'CM Series', icon: Cpu },
+    { href: `/${locale}/products/ab-series`, label: 'AB Series', icon: Cog },
+    { href: `/${locale}/products/failsafe-series`, label: 'Failsafe Series', icon: Shield },
+    { href: `/${locale}/products/smartcon`, label: 'Smartcon', icon: Settings },
+    { href: `/${locale}/products/firmware`, label: 'Firmware 1.600', icon: Layers },
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <div className="container mx-auto px-4 flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold text-[#1a365d]">SCHIEBEL</span>
-          <span className="text-sm text-gray-500 hidden sm:inline">Antriebstechnik</span>
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        {/* Logo */}
+        <Link href={`/${locale}`} className="flex items-center space-x-2">
+          <div className="flex items-center">
+            <span className="text-xl font-bold text-primary">SCHIEBEL</span>
+            <span className="ml-1 text-xs text-muted-foreground hidden sm:inline">Antriebstechnik</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center space-x-6">
+          <Link 
+            href={`/${locale}`} 
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            {t('home')}
+          </Link>
+
           {/* About Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <button className="flex items-center space-x-1 text-sm font-medium text-gray-700 hover:text-[#1a365d] transition-colors">
-                <span>{t('about')}</span>
-                <ChevronDown className="h-4 w-4" />
-              </button>
+              <Button variant="ghost" className="text-sm font-medium h-auto p-0 hover:bg-transparent hover:text-primary">
+                {t('about.title')}
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-48">
               {aboutLinks.map((link) => (
                 <DropdownMenuItem key={link.href} asChild>
-                  <Link href={link.href} className="w-full cursor-pointer">
+                  <Link href={link.href} className="flex items-center gap-2 cursor-pointer">
+                    <link.icon className="h-4 w-4" />
                     {link.label}
                   </Link>
                 </DropdownMenuItem>
@@ -64,15 +76,16 @@ export default function Header() {
           {/* Products Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <button className="flex items-center space-x-1 text-sm font-medium text-gray-700 hover:text-[#1a365d] transition-colors">
-                <span>{t('products')}</span>
-                <ChevronDown className="h-4 w-4" />
-              </button>
+              <Button variant="ghost" className="text-sm font-medium h-auto p-0 hover:bg-transparent hover:text-primary">
+                {t('products.title')}
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-48">
               {productLinks.map((link) => (
                 <DropdownMenuItem key={link.href} asChild>
-                  <Link href={link.href} className="w-full cursor-pointer">
+                  <Link href={link.href} className="flex items-center gap-2 cursor-pointer">
+                    <link.icon className="h-4 w-4" />
                     {link.label}
                   </Link>
                 </DropdownMenuItem>
@@ -80,107 +93,106 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Link href="/applications" className="text-sm font-medium text-gray-700 hover:text-[#1a365d] transition-colors">
+          <Link 
+            href={`/${locale}/applications`} 
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             {t('applications')}
           </Link>
 
-          <Link href="/references" className="text-sm font-medium text-gray-700 hover:text-[#1a365d] transition-colors">
+          <Link 
+            href={`/${locale}/references`} 
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             {t('references')}
           </Link>
 
-          {/* Language Switcher */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm" className="flex items-center space-x-1">
-                <Globe className="h-4 w-4" />
-                <span className="uppercase">{locale}</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem asChild>
-                <Link href={pathname} locale="en" className="w-full cursor-pointer">
-                  English
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href={pathname} locale="ru" className="w-full cursor-pointer">
-                  Русский
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <Link 
+            href={`/${locale}/contact`} 
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            {t('contact')}
+          </Link>
         </nav>
 
-        {/* Mobile Navigation */}
-        <div className="lg:hidden flex items-center space-x-2">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm">
-                <Globe className="h-4 w-4" />
-                <span className="uppercase ml-1">{locale}</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem asChild>
-                <Link href={pathname} locale="en" className="w-full cursor-pointer">
-                  English
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href={pathname} locale="ru" className="w-full cursor-pointer">
-                  Русский
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+        {/* Right side: Language Switcher + Mobile Menu */}
+        <div className="flex items-center gap-4">
+          <LanguageSwitcher />
 
+          {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
+            <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <nav className="flex flex-col space-y-4 mt-8">
+            <SheetContent side="right" className="w-[300px] sm:w-[350px]">
+              <nav className="flex flex-col gap-4 mt-8">
+                <Link 
+                  href={`/${locale}`} 
+                  className="text-lg font-medium hover:text-primary"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {t('home')}
+                </Link>
+
                 <div className="space-y-2">
-                  <p className="font-semibold text-[#1a365d]">{t('about')}</p>
-                  {aboutLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="block pl-4 py-2 text-gray-600 hover:text-[#1a365d]"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+                  <p className="text-lg font-medium text-muted-foreground">{t('about.title')}</p>
+                  <div className="pl-4 space-y-2">
+                    {aboutLinks.map((link) => (
+                      <Link 
+                        key={link.href}
+                        href={link.href} 
+                        className="flex items-center gap-2 text-sm hover:text-primary"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        <link.icon className="h-4 w-4" />
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
+
                 <div className="space-y-2">
-                  <p className="font-semibold text-[#1a365d]">{t('products')}</p>
-                  {productLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="block pl-4 py-2 text-gray-600 hover:text-[#1a365d]"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+                  <p className="text-lg font-medium text-muted-foreground">{t('products.title')}</p>
+                  <div className="pl-4 space-y-2">
+                    {productLinks.map((link) => (
+                      <Link 
+                        key={link.href}
+                        href={link.href} 
+                        className="flex items-center gap-2 text-sm hover:text-primary"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        <link.icon className="h-4 w-4" />
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-                <Link
-                  href="/applications"
-                  className="font-semibold text-[#1a365d]"
+
+                <Link 
+                  href={`/${locale}/applications`} 
+                  className="text-lg font-medium hover:text-primary"
                   onClick={() => setIsOpen(false)}
                 >
                   {t('applications')}
                 </Link>
-                <Link
-                  href="/references"
-                  className="font-semibold text-[#1a365d]"
+
+                <Link 
+                  href={`/${locale}/references`} 
+                  className="text-lg font-medium hover:text-primary"
                   onClick={() => setIsOpen(false)}
                 >
                   {t('references')}
+                </Link>
+
+                <Link 
+                  href={`/${locale}/contact`} 
+                  className="text-lg font-medium hover:text-primary"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {t('contact')}
                 </Link>
               </nav>
             </SheetContent>
