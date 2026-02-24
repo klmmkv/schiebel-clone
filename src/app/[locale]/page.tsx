@@ -21,7 +21,7 @@ export default function HomePage() {
       href: `/${locale}/products/failsafe-series`,
       icon: Shield,
       color: 'bg-red-500',
-      image: '/images/products/failsafe-hero.jpg',
+      image: '/images/products/failsafe-real.jpg',
     },
     {
       nameKey: 'ab.name',
@@ -29,7 +29,7 @@ export default function HomePage() {
       href: `/${locale}/products/ab-series`,
       icon: Cog,
       color: 'bg-blue-500',
-      image: '/images/products/ab-hero.jpg',
+      image: '/images/products/ab-series-real.jpg',
     },
     {
       nameKey: 'cm.name',
@@ -37,7 +37,7 @@ export default function HomePage() {
       href: `/${locale}/products/cm-series`,
       icon: Cpu,
       color: 'bg-green-500',
-      image: '/images/products/cm-hero.jpg',
+      image: '/images/products/cm-series-real.jpg',
     },
     {
       nameKey: 'smartcon.name',
@@ -45,7 +45,7 @@ export default function HomePage() {
       href: `/${locale}/products/smartcon`,
       icon: Settings,
       color: 'bg-purple-500',
-      image: '/images/products/smartcon-hero.jpg',
+      image: '/images/products/smartcon-real.jpg',
     },
   ];
 
