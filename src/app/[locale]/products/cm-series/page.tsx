@@ -1,5 +1,6 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -27,13 +28,22 @@ export default function CMSeriesPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/images/products/cm-hero.jpg"
+            alt="CM Series actuator"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <Link href={`/${locale}`} className="inline-flex items-center text-gray-300 hover:text-white mb-6">
             <ArrowLeft className="h-4 w-4 mr-2" />
             {common('backToProducts')}
           </Link>
-          <Badge className="mb-4 bg-green-500 hover:bg-green-600">Flagship Product</Badge>
+          <Badge className="mb-4 bg-green-500 hover:bg-green-600">{t('badge')}</Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('name')}</h1>
           <p className="text-2xl text-[#f97316] font-medium mb-4">{t('tagline')}</p>
           <p className="text-xl text-gray-300 max-w-3xl">{t('description')}</p>
@@ -46,15 +56,15 @@ export default function CMSeriesPage() {
           <div className="flex flex-wrap justify-center gap-8 text-center">
             <div>
               <div className="text-2xl font-bold">1:50</div>
-              <div className="text-green-100">Speed Ratio</div>
+              <div className="text-green-100">{t('speedRatio')}</div>
             </div>
             <div>
               <div className="text-2xl font-bold">0.1%</div>
-              <div className="text-green-100">Precision Control</div>
+              <div className="text-green-100">{t('precisionControl')}</div>
             </div>
             <div>
               <div className="text-2xl font-bold">3-Level</div>
-              <div className="text-green-100">Configuration</div>
+              <div className="text-green-100">{t('configuration')}</div>
             </div>
           </div>
         </div>
@@ -108,10 +118,10 @@ export default function CMSeriesPage() {
       <section className="py-16 bg-[#1a365d] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Ready to configure your CM Series actuator?
+            {t('ctaTitle')}
           </h2>
           <p className="text-gray-300 mb-8">
-            Our 3-level concept lets you create the perfect solution for your needs.
+            {t('ctaSubtitle')}
           </p>
           <Button asChild size="lg" className="bg-[#f97316] hover:bg-[#ea580c]">
             <a href="mailto:info@schiebel-actuators.com">

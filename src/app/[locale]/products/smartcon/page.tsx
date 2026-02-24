@@ -1,5 +1,6 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -22,8 +23,17 @@ export default function SmartconPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/images/products/smartcon-hero.jpg"
+            alt="Smartcon control system"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <Link href={`/${locale}`} className="inline-flex items-center text-gray-300 hover:text-white mb-6">
             <ArrowLeft className="h-4 w-4 mr-2" />
             {common('backToProducts')}

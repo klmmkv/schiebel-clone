@@ -22,7 +22,8 @@
     "hero": {
       "title": "Your Success Is Our Driving Force",
       "subtitle": "High-End Electric Actuators from Austria",
-      "cta": "Explore Products"
+      "cta": "Explore Products",
+      "badge": "High-End Electric Actuators"
     },
     "products": {
       "title": "Our Product Series",
@@ -84,6 +85,10 @@
     "failsafe": {
       "name": "Failsafe Series",
       "tagline": "Safe & Reliable",
+      "badge": "Failsafe Technology",
+      "keyBenefit": "Power failure? Valves return to safe position in less than 1 second!",
+      "ctaTitle": "Need a Failsafe solution for your application?",
+      "ctaSubtitle": "Contact our engineers to discuss your safety requirements.",
       "description": "SCHIEBEL's Failsafe technology is based on the concept of combining an electric actuator with a purely mechanical safety function independent of energy supply. In case of electrical power failure, valves can be brought to a predefined position in less than 1 second.",
       "technology": {
         "title": "Technology",
@@ -105,6 +110,18 @@
     "ab": {
       "name": "AB Series",
       "tagline": "Traditional & Robust",
+      "badge": "Traditional Excellence",
+      "standardSafety": "Standard Safety",
+      "withFailsafe": "With Failsafe",
+      "hydrogenReady": "Hydrogen Ready",
+      "applicationsTitle": "Perfect for Heavy-Duty Applications",
+      "ctaTitle": "Need a robust actuator solution?",
+      "ctaSubtitle": "The AB Series delivers maximum performance for demanding applications.",
+      "appPowerPlants": "Power Plants",
+      "appSteel": "Steel Industry",
+      "appOilGas": "Oil & Gas",
+      "appChemical": "Chemical Plants",
+      "appWater": "Water Treatment",
       "description": "The AB series is the traditional product successfully deployed worldwide with satisfied customers. This product series is continuously developed and optimized for various applications. Its particularly robust construction makes the actuators the first choice for heavy-duty applications.",
       "performance": {
         "title": "Performance",
@@ -126,6 +143,12 @@
     "cm": {
       "name": "CM Series",
       "tagline": "Smart & Flexible",
+      "badge": "Flagship Product",
+      "speedRatio": "Speed Ratio",
+      "precisionControl": "Precision Control",
+      "configuration": "Configuration",
+      "ctaTitle": "Ready to configure your CM Series actuator?",
+      "ctaSubtitle": "Our 3-level concept lets you create the perfect solution for your needs.",
       "description": "The flagship of SCHIEBEL are the CM series actuators, specially developed for complex applications requiring high-performance actuators with small footprint. Using a 3-level concept, customers can configure the perfect actuator for their application.",
       "design": {
         "title": "Design",
@@ -147,6 +170,15 @@
     "smartcon": {
       "name": "Smartcon",
       "tagline": "One Interface Makes It All",
+      "badge": "Control System",
+      "irBtTitle": "IR & BT Integration",
+      "irBtDesc": "Integrated infrared and Bluetooth technology for easy parameterization",
+      "industry40Title": "Industry 4.0 Ready",
+      "industry40Desc": "Prepared for IoT and comprehensive networking solutions",
+      "multiLevelTitle": "Multi-Level Security",
+      "multiLevelDesc": "Sophisticated user level system for authorized access only",
+      "ctaTitle": "Want to learn more about Smartcon?",
+      "ctaSubtitle": "Discover how our intelligent control system can enhance your operations.",
       "description": "Smartcon is a modern, reliable and versatile control system that provides valuable information about the integrated drive technology. Developed to combine aspects such as user-friendliness, flexibility and reliability in one control, it has been optimized with numerous additional features over the years.",
       "haptics": {
         "title": "Haptics",
@@ -169,6 +201,23 @@
     "firmware": {
       "name": "Firmware 1.600",
       "tagline": "Customer Experience at Its Best",
+      "badge": "Latest Release",
+      "userLevels": "User Levels",
+      "historyEntries": "History Entries",
+      "binaryOutputs": "Binary Outputs",
+      "industryFirst": "Industry First",
+      "darkDisplayTitle": "The Dark Display Revolution",
+      "darkDisplayDesc": "Our invertible LCD display provides better readability in direct sunlight. A complete novelty in the industry, designed for real-world field conditions.",
+      "darkModeDisplay": "Dark Mode Display",
+      "upgradeBenefits": "Upgrade Benefits",
+      "benefit1": "Enhanced user interface customization",
+      "benefit2": "Five times more history storage",
+      "benefit3": "Advanced diagnostic capabilities",
+      "benefit4": "Better outdoor visibility",
+      "benefit5": "Full remote access via bus",
+      "benefit6": "Logical signal linking",
+      "ctaTitle": "Upgrade to Firmware 1.600",
+      "ctaSubtitle": "Contact us to learn about upgrading your existing actuators.",
       "features": {
         "userInterface": {
           "title": "Individual User Interface",

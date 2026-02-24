@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, TrendingUp, Lightbulb, Heart, Cpu } from 'lucide-react';
 
@@ -16,8 +17,17 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/images/about/factory.jpg"
+            alt="Schiebel factory"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('title')}</h1>
           <p className="text-xl text-gray-300">{t('subtitle')}</p>
         </div>

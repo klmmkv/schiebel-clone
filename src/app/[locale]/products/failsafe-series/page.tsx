@@ -1,5 +1,6 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -27,13 +28,22 @@ export default function FailsafeSeriesPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/images/products/failsafe-hero.jpg"
+            alt="Failsafe Series actuator"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <Link href={`/${locale}`} className="inline-flex items-center text-gray-300 hover:text-white mb-6">
             <ArrowLeft className="h-4 w-4 mr-2" />
             {common('backToProducts')}
           </Link>
-          <Badge className="mb-4 bg-red-500 hover:bg-red-600">Failsafe Technology</Badge>
+          <Badge className="mb-4 bg-red-500 hover:bg-red-600">{t('badge')}</Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('name')}</h1>
           <p className="text-2xl text-[#f97316] font-medium mb-4">{t('tagline')}</p>
           <p className="text-xl text-gray-300 max-w-3xl">{t('description')}</p>
@@ -44,7 +54,7 @@ export default function FailsafeSeriesPage() {
       <section className="py-8 bg-[#f97316] text-white">
         <div className="container mx-auto px-4 text-center">
           <p className="text-lg md:text-xl font-medium">
-            ⚡ Power failure? Valves return to safe position in less than 1 second!
+            ⚡ {t('keyBenefit')}
           </p>
         </div>
       </section>
@@ -97,10 +107,10 @@ export default function FailsafeSeriesPage() {
       <section className="py-16 bg-[#1a365d] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Need a Failsafe solution for your application?
+            {t('ctaTitle')}
           </h2>
           <p className="text-gray-300 mb-8">
-            Contact our engineers to discuss your safety requirements.
+            {t('ctaSubtitle')}
           </p>
           <Button asChild size="lg" className="bg-[#f97316] hover:bg-[#ea580c]">
             <a href="mailto:info@schiebel-actuators.com">

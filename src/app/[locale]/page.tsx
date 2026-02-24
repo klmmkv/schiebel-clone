@@ -1,5 +1,6 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -9,44 +10,50 @@ export default function HomePage() {
   const t = useTranslations('home');
   const nav = useTranslations('nav');
   const apps = useTranslations('applications');
+  const products_t = useTranslations('products');
+  const common = useTranslations('common');
   const locale = useLocale();
 
   const products = [
     {
-      name: 'Failsafe Series',
-      tagline: 'Safe & Reliable',
+      nameKey: 'failsafe.name',
+      taglineKey: 'failsafe.tagline',
       href: `/${locale}/products/failsafe-series`,
       icon: Shield,
       color: 'bg-red-500',
+      image: '/images/products/failsafe-hero.jpg',
     },
     {
-      name: 'AB Series',
-      tagline: 'Traditional & Robust',
+      nameKey: 'ab.name',
+      taglineKey: 'ab.tagline',
       href: `/${locale}/products/ab-series`,
       icon: Cog,
       color: 'bg-blue-500',
+      image: '/images/products/ab-hero.jpg',
     },
     {
-      name: 'CM Series',
-      tagline: 'Smart & Flexible',
+      nameKey: 'cm.name',
+      taglineKey: 'cm.tagline',
       href: `/${locale}/products/cm-series`,
       icon: Cpu,
       color: 'bg-green-500',
+      image: '/images/products/cm-hero.jpg',
     },
     {
-      name: 'Smartcon',
-      tagline: 'One Interface Makes It All',
+      nameKey: 'smartcon.name',
+      taglineKey: 'smartcon.tagline',
       href: `/${locale}/products/smartcon`,
       icon: Settings,
       color: 'bg-purple-500',
+      image: '/images/products/smartcon-hero.jpg',
     },
   ];
 
   const applications = [
-    { key: 'water', icon: Droplet },
-    { key: 'power', icon: Zap },
-    { key: 'oilGas', icon: Flame },
-    { key: 'steel', icon: Factory },
+    { key: 'water', icon: Droplet, image: '/images/applications/water.jpg' },
+    { key: 'power', icon: Zap, image: '/images/applications/power.jpg' },
+    { key: 'oilGas', icon: Flame, image: '/images/applications/oil-gas.jpg' },
+    { key: 'steel', icon: Factory, image: '/images/applications/steel.jpg' },
   ];
 
   return (
@@ -57,7 +64,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-24 md:py-32 relative">
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-[#f97316] hover:bg-[#ea580c]">
-              High-End Electric Actuators
+              {t('hero.badge')}
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               {t('hero.title')}
@@ -97,19 +104,26 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product) => (
               <Link key={product.href} href={product.href}>
-                <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer group">
-                  <CardHeader>
-                    <div className={`w-12 h-12 rounded-lg ${product.color} flex items-center justify-center mb-4`}>
-                      <product.icon className="h-6 w-6 text-white" />
+                <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer group overflow-hidden">
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={product.image}
+                      alt={`${products_t(product.nameKey)} electric actuator`}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className={`absolute top-3 left-3 ${product.color} px-2 py-1 rounded text-white text-xs font-medium`}>
+                      {products_t(product.taglineKey)}
                     </div>
+                  </div>
+                  <CardHeader className="pb-2">
                     <CardTitle className="group-hover:text-[#f97316] transition-colors">
-                      {product.name}
+                      {products_t(product.nameKey)}
                     </CardTitle>
-                    <CardDescription>{product.tagline}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <span className="text-[#f97316] flex items-center text-sm font-medium">
-                      Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                      {common('learnMore')} <ArrowRight className="ml-1 h-4 w-4" />
                     </span>
                   </CardContent>
                 </Card>
@@ -132,11 +146,19 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {applications.map((app) => (
-              <Card key={app.key} className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-[#1a365d] flex items-center justify-center mx-auto mb-4">
-                    <app.icon className="h-8 w-8 text-white" />
+              <Card key={app.key} className="text-center overflow-hidden group">
+                <div className="relative h-32 overflow-hidden">
+                  <Image
+                    src={app.image}
+                    alt={apps(`${app.key}.title`)}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-[#1a365d]/60 flex items-center justify-center">
+                    <app.icon className="h-10 w-10 text-white" />
                   </div>
+                </div>
+                <CardHeader className="pb-2">
                   <CardTitle className="text-lg">{apps(`${app.key}.title`)}</CardTitle>
                 </CardHeader>
                 <CardContent>
