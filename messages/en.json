@@ -1,5 +1,6 @@
 {
   "nav": {
+    "home": "Home",
     "about": "About",
     "aboutUs": "About Us",
     "quality": "Quality & Safety",
@@ -11,7 +12,11 @@
     "firmware": "Firmware 1.600",
     "applications": "Applications",
     "references": "References",
-    "contact": "Contact"
+    "contact": "Contact",
+    "aboutTitle": "About",
+    "aboutCompany": "Company",
+    "aboutQuality": "Quality & Safety",
+    "productsTitle": "Products"
   },
   "home": {
     "hero": {
@@ -241,7 +246,37 @@
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "followUs": "Follow Us",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "products": "Products",
+    "aboutUs": "About Us",
+    "applications": "Applications",
+    "references": "References",
+    "contactUs": "Contact Us",
+    "privacy": "Privacy Policy",
+    "imprint": "Imprint"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "address": {
+      "title": "Address"
+    },
+    "phone": {
+      "title": "Phone"
+    },
+    "email": {
+      "title": "Email"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday: 8:00 AM - 5:00 PM",
+      "weekend": "Saturday - Sunday: Closed"
+    },
+    "global": {
+      "title": "Global Presence",
+      "subtitle": "With distribution partners in over 50 countries, we are always close to you. Contact us to find your local representative.",
+      "cta": "Send Inquiry"
+    }
   },
   "common": {
     "learnMore": "Learn More",
