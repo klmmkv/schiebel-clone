@@ -1,0 +1,252 @@
+{
+  "nav": {
+    "about": "About",
+    "aboutUs": "About Us",
+    "quality": "Quality & Safety",
+    "products": "Products",
+    "failsafe": "Failsafe Series",
+    "abSeries": "AB Series",
+    "cmSeries": "CM Series",
+    "smartcon": "Smartcon",
+    "firmware": "Firmware 1.600",
+    "applications": "Applications",
+    "references": "References",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Your Success Is Our Driving Force",
+      "subtitle": "High-End Electric Actuators from Austria",
+      "cta": "Explore Products"
+    },
+    "products": {
+      "title": "Our Product Series",
+      "subtitle": "Innovative actuator solutions for every application"
+    },
+    "applications": {
+      "title": "Application Areas",
+      "subtitle": "Trusted across industries worldwide",
+      "viewAll": "View All Applications"
+    },
+    "cta": {
+      "title": "Ready to discuss your project?",
+      "subtitle": "Our experts are here to help you find the perfect actuator solution.",
+      "button": "Contact Us"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "From Tradition to Modernity",
+    "whoWeAre": {
+      "title": "Who We Are",
+      "subtitle": "From Tradition to Modernity",
+      "content": "Klaus Schiebel has expanded the Viennese family business from a regional machine builder to a globally operating technology company through technical innovations and a keen understanding of customer needs.\n\nCurrently, we serve customers and projects in more than 50 countries across all continents with our own offices and 30 distribution partners, providing secure employment for 100 employees.\n\nAll SCHIEBEL products are developed and manufactured at the company headquarters in Vienna. This ensures the highest quality and compliance with all safety standards."
+    },
+    "newEra": {
+      "title": "The New Era",
+      "content": "The globally increasing demand for our actuators has prompted an expansion of production capacities and a reorientation of the company.\n\nWith the modernization of our office spaces, the construction of a fully automated warehouse, and extensive investments in our machinery, we have laid the foundation for further development projects. At the same time, we have continuously driven digitalization within the company."
+    },
+    "innovations": {
+      "title": "Innovations",
+      "content": "Developing new solutions and staying one step ahead of the market in terms of innovation is one of our strengths. The focus of our developments is always user-friendly technology, high quality, safety, and appealing design.\n\nThe unique SCHIEBEL Failsafe technology is especially valued for sensitive applications.\n\nAll SCHIEBEL products can be quickly and seamlessly expanded through already integrated software. This is less error-prone and more cost-effective."
+    },
+    "customerOrientation": {
+      "title": "Customer Orientation",
+      "content": "We work very intensively and closely with our customers because they know best what they need. To achieve optimal results, everyone contributes their expertise to the development process.\n\nThe focus is on individual solutions that guarantee customers maximum safety while also providing flexibility.\n\nFrom this collaboration with our customers, long-standing business relationships with countless innovative solutions have emerged."
+    },
+    "industry40": {
+      "title": "SCHIEBEL 4.0",
+      "content": "In product development, we are intensively advancing the intelligent networking of mechatronic systems. Our competence center specializes in perfecting IoT concepts and continuously tests new cloud solutions and WLAN standards. Thanks to the support of a large number of relevant fieldbus systems, our solutions can be integrated into various control systems.\n\nA focus of our R&D is Predictive Maintenance. This defines potential problems in advance and shows ways to solve them.\n\nInternally, we focus our activities on digitizing our production processes, promoting the use of robots, and implementing various tools and new work methods to live the progress."
+    }
+  },
+  "quality": {
+    "title": "Quality & Safety",
+    "subtitle": "Excellence in every detail",
+    "safety": {
+      "title": "Safety",
+      "content": "Safety in all aspects is paramount. Actuators are part of highly complex, sensitive systems and must contribute to their safety. To meet the respective requirements, SCHIEBEL actuators are manufactured with different safety levels depending on the application. Personnel are also continuously and intensively trained for proper installation, commissioning, and maintenance. This ensures safety for people and machines."
+    },
+    "qualityManagement": {
+      "title": "Quality Management",
+      "content": "Comprehensive, seamless quality control is a given for us: No product leaves production without being precisely inspected. This also ensures a high level of safe application and low maintenance costs."
+    },
+    "certifications": {
+      "safety": "Safety Certifications",
+      "quality": "Quality Certifications"
+    }
+  },
+  "products": {
+    "failsafe": {
+      "name": "Failsafe Series",
+      "tagline": "Safe & Reliable",
+      "description": "SCHIEBEL's Failsafe technology is based on the concept of combining an electric actuator with a purely mechanical safety function independent of energy supply. In case of electrical power failure, valves can be brought to a predefined position in less than 1 second.",
+      "technology": {
+        "title": "Technology",
+        "content": "Safety according to SIL classification per IEC 61508 and reliability are at the center of SCHIEBEL's networked CM actuators equipped with the optional Failsafe function. Precision and speed control are not compromised thanks to the mature technology."
+      },
+      "design": {
+        "title": "Design",
+        "content": "Intelligent functional design and high-quality materials raise the CM Failsafe actuators to a new quality level. SCHIEBEL has particularly ensured that the center of gravity is directly above the valve, which benefits weight distribution and assembly."
+      },
+      "engineering": {
+        "title": "Engineering",
+        "content": "SCHIEBEL offers customer-specific solutions with all software and hardware features that customers need for deploying Failsafe actuators. Thanks to in-house software engineering—a core competency of SCHIEBEL—users can rely on optimal hardware coordination and ongoing service support."
+      },
+      "availability": {
+        "title": "Availability",
+        "content": "CM actuators with Failsafe function combine the advantages of electric drive and mechanical spring. The elimination of other technologies (hydraulic/pneumatic), simple construction, and sophisticated software options reduce random errors to a minimum."
+      }
+    },
+    "ab": {
+      "name": "AB Series",
+      "tagline": "Traditional & Robust",
+      "description": "The AB series is the traditional product successfully deployed worldwide with satisfied customers. This product series is continuously developed and optimized for various applications. Its particularly robust construction makes the actuators the first choice for heavy-duty applications.",
+      "performance": {
+        "title": "Performance",
+        "content": "The electric actuators of the AB series meet all users who need strong performance with maximum robustness. Components manufactured with highest quality at SCHIEBEL guarantee these properties and allow very high torque through generous mechanical dimensioning."
+      },
+      "robustness": {
+        "title": "Robustness",
+        "content": "The AB series fulfills any special requirement thanks to its intelligent, flexible construction. Generously dimensioned, robust and resistant drive components guarantee maximum longevity."
+      },
+      "safety": {
+        "title": "Safety",
+        "content": "The actuator can be delivered Ex-protected with pressure-encapsulated control—use in the hydrogen sector requiring gas classification IIC according to ATEX is possible without problems. AB actuators achieve safety level SIL-2, with Failsafe function SIL-3."
+      },
+      "flexibility": {
+        "title": "Flexibility",
+        "content": "The proven control concept of the AB series offers the possibility to use mechanical or electronic reversing contactors. It is also possible to equip the actuators with various voltage systems."
+      }
+    },
+    "cm": {
+      "name": "CM Series",
+      "tagline": "Smart & Flexible",
+      "description": "The flagship of SCHIEBEL are the CM series actuators, specially developed for complex applications requiring high-performance actuators with small footprint. Using a 3-level concept, customers can configure the perfect actuator for their application.",
+      "design": {
+        "title": "Design",
+        "content": "Through intelligent design and high-quality materials, SCHIEBEL increases the lifespan and availability of the CM series to a new level. Low weight and compact form simplify handling and ensure that the electric actuators can play out all advantages even in tight spaces."
+      },
+      "technology": {
+        "title": "Technology",
+        "content": "SCHIEBEL pairs the enormous flexibility of CM series electric actuators with high performance. Using brushless DC motor combined with frequency converter, a speed ratio of 1:50 is achieved. This technology allows particularly high positioning speeds with extremely precise control of up to 0.1%."
+      },
+      "digitalization": {
+        "title": "Digitalization",
+        "content": "CM series actuators can naturally be networked via internet-based bus systems: the required interfaces are available. With BT app and specially developed PC software, SCHIEBEL provides the right answer to today's and future questions regarding Industry 4.0 and Internet of Things."
+      },
+      "modular": {
+        "title": "Modular System",
+        "content": "SCHIEBEL's CM actuators are fundamentally modular. Few components, which are also identical across most sizes, face a variety of options that provide customers with exactly the functions they need for their application."
+      }
+    },
+    "smartcon": {
+      "name": "Smartcon",
+      "tagline": "One Interface Makes It All",
+      "description": "Smartcon is a modern, reliable and versatile control system that provides valuable information about the integrated drive technology. Developed to combine aspects such as user-friendliness, flexibility and reliability in one control, it has been optimized with numerous additional features over the years.",
+      "haptics": {
+        "title": "Haptics",
+        "content": "To ensure simple, error-free operation, SCHIEBEL has devoted great attention to haptics. For example, operation via switches in the field is possible with PPE in any environment."
+      },
+      "technology": {
+        "title": "Technology",
+        "content": "SCHIEBEL's electric actuators have a high degree of intelligence—and this is by no means only useful in case of malfunction. The Smartcon control is responsible for this. With integrated IR and BT technology and menu-guided project-oriented SW tools, parameterization in the field is particularly simple and safe."
+      },
+      "digitalization": {
+        "title": "Digitalization",
+        "content": "Open protocol structures in software or control can be integrated into existing customer systems—following the trend towards comprehensive networking. Interfaces to a variety of serial and TCP-based fieldbus systems are available, including Profibus, Modbus RTU, Modbus TCP, Ethernet/IP, DeviceNET, Ethernet Powerlink and HART protocol."
+      },
+      "security": {
+        "title": "Security",
+        "content": "Security is particularly important in the IoT era. To protect the control from unauthorized access, SCHIEBEL relies on BT communication and password protection. A sophisticated multi-level system of different user levels ensures visibility or parameterization only for authorized users."
+      },
+      "protocols": "Supported Protocols"
+    },
+    "firmware": {
+      "name": "Firmware 1.600",
+      "tagline": "Customer Experience at Its Best",
+      "features": {
+        "userInterface": {
+          "title": "Individual User Interface",
+          "content": "Up to 8 customer-specific user levels with user-relevant permissions—from read-only permission for selected data to comprehensive permission for setting parameters."
+        },
+        "history": {
+          "title": "Extended History Function",
+          "content": "Expansion to 500 entries—five times more than in the previous version. Detailed information about backups, password and parameter changes, clearing the history."
+        },
+        "diagnosis": {
+          "title": "Comprehensive Error Diagnosis",
+          "content": "16 additional feedback options at binary outputs. Different binary signals can be logically linked and output as one output signal. Full remote access to all parameters via bus communication."
+        },
+        "display": {
+          "title": "Invertible LCD Display",
+          "content": "The absolute novelty in the industry—the dark display. Better readability in direct sunlight. Reorganized and extended display of the graphical user interface."
+        }
+      }
+    },
+    "sizes": "Available Sizes",
+    "torque": "Torque"
+  },
+  "applications": {
+    "title": "Application Areas",
+    "subtitle": "Our unique portfolio enables deployment in almost every industry. The modular concept of our products ensures universal use with different requirements.",
+    "water": {
+      "title": "Water & Wastewater",
+      "description": "Our actuators feature long service life and are specially protected against corrosion through careful surface treatment."
+    },
+    "power": {
+      "title": "Power Plants",
+      "description": "Reliability is a core topic in power plant construction. We have all necessary certifications to protect personnel and plant components."
+    },
+    "oilGas": {
+      "title": "Oil & Gas",
+      "description": "For this application, our reliable actuators are particularly valued for their innovative safety system and easy maintenance."
+    },
+    "districtHeating": {
+      "title": "District Heating",
+      "description": "SCHIEBEL actuators are particularly suitable for remote diagnostics thanks to integrated control and can perfectly control decentralized processes."
+    },
+    "tunnel": {
+      "title": "Tunnel Construction",
+      "description": "Every tunnel construction is unique. We develop individual, customer-specific special solutions for complex tasks with our know-how."
+    },
+    "chemical": {
+      "title": "Chemical Industry",
+      "description": "SCHIEBEL actuators meet all general and customer-specific safety certificates. We are a reliable partner for maximum safety."
+    },
+    "steel": {
+      "title": "Steel Plants",
+      "description": "Our actuators can be individually expanded through numerous components and software solutions, enabling safe deployment worldwide."
+    },
+    "paper": {
+      "title": "Paper Industry",
+      "description": "Low weight, compact forms and internet-based bus systems via interfaces enable deployment even in confined spaces."
+    },
+    "shipbuilding": {
+      "title": "Shipbuilding",
+      "description": "Intelligent design and high-quality materials significantly increase the service life and maintenance-free operation of our actuators."
+    }
+  },
+  "references": {
+    "title": "References",
+    "subtitle": "Trusted by industry leaders worldwide",
+    "company": "Company",
+    "country": "Country",
+    "industry": "Industry",
+    "sector": "Sector",
+    "products": "Products"
+  },
+  "footer": {
+    "company": "SCHIEBEL Antriebstechnik",
+    "tagline": "High-End electric actuators from Austria",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewDetails": "View Details",
+    "contactUs": "Contact Us",
+    "backToProducts": "Back to Products"
+  }
+}

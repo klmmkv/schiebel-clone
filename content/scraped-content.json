@@ -1,0 +1,458 @@
+{
+  "company": {
+    "name": "SCHIEBEL Antriebstechnik",
+    "tagline": "Your success is our driving force",
+    "description": "High-End electric actuators from Austria",
+    "contact": {
+      "address": "Josef Benc Gasse 4, 1230 Vienna, Austria",
+      "phone": "+43 1 66 108",
+      "fax": "+43 1 66 108 4",
+      "email": "info@schiebel-actuators.com"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/schiebel-antriebstechnik-gmbh/",
+      "youtube": "https://www.youtube.com/channel/UCWGCY0xrvppNBgqqpnwAZmA"
+    }
+  },
+  "pages": {
+    "about": {
+      "slug": "about",
+      "title": {
+        "en": "About Us",
+        "ru": "О компании"
+      },
+      "sections": [
+        {
+          "id": "who-we-are",
+          "title": {
+            "en": "Who We Are",
+            "ru": "Кто мы"
+          },
+          "subtitle": {
+            "en": "From Tradition to Modernity",
+            "ru": "От традиций к современности"
+          },
+          "content": {
+            "en": "Klaus Schiebel has expanded the Viennese family business from a regional machine builder to a globally operating technology company through technical innovations and a keen understanding of customer needs.\n\nCurrently, we serve customers and projects in more than 50 countries across all continents with our own offices and 30 distribution partners, providing secure employment for 100 employees.\n\nAll SCHIEBEL products are developed and manufactured at the company headquarters in Vienna. This ensures the highest quality and compliance with all safety standards.",
+            "ru": "Клаус Шибель превратил венскую семейную компанию из регионального машиностроителя в глобально действующее технологическое предприятие благодаря техническим инновациям и глубокому пониманию потребностей клиентов.\n\nВ настоящее время мы обслуживаем клиентов и проекты в более чем 50 странах на всех континентах через наши собственные офисы и 30 дистрибьюторских партнёров, обеспечивая стабильную занятость 100 сотрудникам.\n\nВся продукция SCHIEBEL разрабатывается и производится в штаб-квартире компании в Вене. Это гарантирует высочайшее качество и соответствие всем стандартам безопасности."
+          }
+        },
+        {
+          "id": "new-era",
+          "title": {
+            "en": "The New Era",
+            "ru": "Новая эра"
+          },
+          "content": {
+            "en": "The globally increasing demand for our actuators has prompted an expansion of production capacities and a reorientation of the company.\n\nWith the modernization of our office spaces, the construction of a fully automated warehouse, and extensive investments in our machinery, we have laid the foundation for further development projects. At the same time, we have continuously driven digitalization within the company.",
+            "ru": "Растущий мировой спрос на наши приводы послужил толчком для расширения производственных мощностей и переориентации компании.\n\nМодернизация офисных помещений, строительство полностью автоматизированного склада и значительные инвестиции в парк оборудования заложили основу для дальнейших проектов развития. Параллельно мы постоянно продвигаем цифровизацию внутри компании."
+          }
+        },
+        {
+          "id": "innovations",
+          "title": {
+            "en": "Innovations",
+            "ru": "Инновации"
+          },
+          "content": {
+            "en": "Developing new solutions and staying one step ahead of the market in terms of innovation is one of our strengths. The focus of our developments is always user-friendly technology, high quality, safety, and appealing design.\n\nThe unique SCHIEBEL Failsafe technology is especially valued for sensitive applications.\n\nAll SCHIEBEL products can be quickly and seamlessly expanded through already integrated software. This is less error-prone and more cost-effective.",
+            "ru": "Разработка новых решений и опережение рынка в области инноваций — одна из наших сильных сторон. В центре внимания наших разработок всегда находятся удобная для пользователя техника, высокое качество, безопасность и привлекательный дизайн.\n\nУникальная технология SCHIEBEL Failsafe особенно ценится для чувствительных областей применения.\n\nВся продукция SCHIEBEL может быть быстро и безошибочно расширена благодаря уже интегрированному программному обеспечению. Это менее подвержено ошибкам и более экономично."
+          }
+        },
+        {
+          "id": "customer-orientation",
+          "title": {
+            "en": "Customer Orientation",
+            "ru": "Ориентация на клиента"
+          },
+          "content": {
+            "en": "We work very intensively and closely with our customers because they know best what they need. To achieve optimal results, everyone contributes their expertise to the development process.\n\nThe focus is on individual solutions that guarantee customers maximum safety while also providing flexibility.\n\nFrom this collaboration with our customers, long-standing business relationships with countless innovative solutions have emerged.",
+            "ru": "Мы очень интенсивно и тесно сотрудничаем с нашими клиентами, потому что они лучше всех знают, что им нужно. Для достижения оптимального результата каждый вносит свою компетенцию в процесс разработки.\n\nВ центре внимания — индивидуальные решения, которые гарантируют клиентам максимальную безопасность и одновременно гибкость.\n\nИз этого сотрудничества с нашими клиентами возникли долгосрочные деловые отношения с бесчисленными инновационными решениями."
+          }
+        },
+        {
+          "id": "industry-4-0",
+          "title": {
+            "en": "SCHIEBEL 4.0",
+            "ru": "SCHIEBEL 4.0"
+          },
+          "content": {
+            "en": "In product development, we are intensively advancing the intelligent networking of mechatronic systems. Our competence center specializes in perfecting IoT concepts and continuously tests new cloud solutions and WLAN standards. Thanks to the support of a large number of relevant fieldbus systems, our solutions can be integrated into various control systems.\n\nA focus of our R&D is Predictive Maintenance. This defines potential problems in advance and shows ways to solve them.\n\nInternally, we focus our activities on digitizing our production processes, promoting the use of robots, and implementing various tools and new work methods to live the progress.",
+            "ru": "В разработке продукции мы интенсивно продвигаем интеллектуальное объединение мехатронных систем. Наш центр компетенций специализируется на совершенствовании концепций IoT и постоянно тестирует новые облачные решения и стандарты WLAN. Благодаря поддержке большого числа релевантных систем полевых шин наши решения могут интегрироваться в различные системы управления.\n\nОдним из направлений нашей НИОКР является предиктивное техобслуживание. Оно заранее определяет потенциальные проблемы и показывает пути их решения.\n\nВнутри компании мы фокусируемся на цифровизации производственных процессов, продвигаем использование роботов и внедряем различные инструменты и методы работы нового времени."
+          }
+        }
+      ]
+    },
+    "quality": {
+      "slug": "quality",
+      "title": {
+        "en": "Quality & Safety",
+        "ru": "Качество и безопасность"
+      },
+      "sections": [
+        {
+          "id": "safety",
+          "title": {
+            "en": "Safety",
+            "ru": "Безопасность"
+          },
+          "content": {
+            "en": "Safety in all aspects is paramount. Actuators are part of highly complex, sensitive systems and must contribute to their safety. To meet the respective requirements, SCHIEBEL actuators are manufactured with different safety levels depending on the application. Personnel are also continuously and intensively trained for proper installation, commissioning, and maintenance. This ensures safety for people and machines.",
+            "ru": "Безопасность во всех отношениях стоит на первом месте. Приводы являются частью высокосложных, чувствительных установок и должны способствовать их безопасности. Для соответствия соответствующим требованиям приводы SCHIEBEL изготавливаются с различными уровнями безопасности в зависимости от области применения. Персонал также постоянно и интенсивно обучается для правильной установки, ввода в эксплуатацию и технического обслуживания. Так мы обеспечиваем безопасность для людей и машин."
+          },
+          "certifications": [
+            "International EX approvals",
+            "SIL manufacturer certifications",
+            "Country-specific certifications",
+            "Customer-specific certifications",
+            "Nuclear certification"
+          ]
+        },
+        {
+          "id": "quality-management",
+          "title": {
+            "en": "Quality Management",
+            "ru": "Управление качеством"
+          },
+          "content": {
+            "en": "Comprehensive, seamless quality control is a given for us: No product leaves production without being precisely inspected. This also ensures a high level of safe application and low maintenance costs.",
+            "ru": "Всеобъемлющий, непрерывный контроль качества для нас само собой разумеется: ни один продукт не покидает производство без тщательной проверки. Это также гарантирует высокий уровень безопасности применения и низкие затраты на техническое обслуживание."
+          },
+          "certifications": [
+            "ISO 9001 Certification",
+            "ISO 45001 Certification",
+            "ISO 14001 Certification"
+          ]
+        }
+      ]
+    }
+  },
+  "products": {
+    "failsafe": {
+      "slug": "failsafe-series",
+      "name": "Failsafe Series",
+      "tagline": {
+        "en": "Safe & Reliable",
+        "ru": "Безопасность и надёжность"
+      },
+      "description": {
+        "en": "SCHIEBEL's Failsafe technology is based on the concept of combining an electric actuator with a purely mechanical safety function independent of energy supply. In case of electrical power failure, valves can be brought to a predefined position in less than 1 second.",
+        "ru": "Технология Failsafe от SCHIEBEL основана на концепции объединения электрического привода с чисто механической функцией безопасности, независимой от подачи энергии. При отключении электроэнергии арматура может быть переведена в заранее определённое положение менее чем за 1 секунду."
+      },
+      "features": [
+        {
+          "title": { "en": "Technology", "ru": "Технология" },
+          "content": {
+            "en": "Safety according to SIL classification per IEC 61508 and reliability are at the center of SCHIEBEL's networked CM actuators equipped with the optional Failsafe function. Precision and speed control are not compromised thanks to the mature technology.",
+            "ru": "Безопасность в соответствии с классификацией SIL по IEC 61508 и надёжность находятся в центре внимания сетевых приводов CM от SCHIEBEL, оснащённых опциональной функцией Failsafe. Благодаря зрелой технологии точность и регулирование скорости не страдают."
+          }
+        },
+        {
+          "title": { "en": "Design", "ru": "Конструкция" },
+          "content": {
+            "en": "Intelligent functional design and high-quality materials raise the CM Failsafe actuators to a new quality level. SCHIEBEL has particularly ensured that the center of gravity is directly above the valve, which benefits weight distribution and assembly.",
+            "ru": "Интеллектуальный функциональный дизайн и высококачественные материалы поднимают приводы CM Failsafe на новый уровень качества. SCHIEBEL особенно позаботился о том, чтобы центр тяжести находился непосредственно над арматурой, что благоприятно влияет на распределение веса и монтаж."
+          }
+        },
+        {
+          "title": { "en": "Engineering", "ru": "Инжиниринг" },
+          "content": {
+            "en": "SCHIEBEL offers customer-specific solutions with all software and hardware features that customers need for deploying Failsafe actuators. Thanks to in-house software engineering—a core competency of SCHIEBEL—users can rely on optimal hardware coordination and ongoing service support.",
+            "ru": "SCHIEBEL предлагает клиентские решения со всеми программными и аппаратными функциями, которые нужны клиентам для применения приводов Failsafe. Благодаря собственной программной инженерии — ключевой компетенции SCHIEBEL — пользователи могут рассчитывать на оптимальную координацию оборудования и постоянную сервисную поддержку."
+          }
+        },
+        {
+          "title": { "en": "Availability", "ru": "Доступность" },
+          "content": {
+            "en": "CM actuators with Failsafe function combine the advantages of electric drive and mechanical spring. The elimination of other technologies (hydraulic/pneumatic), simple construction, and sophisticated software options reduce random errors to a minimum.",
+            "ru": "Приводы CM с функцией Failsafe объединяют преимущества электрического привода и механической пружины. Отказ от других технологий (гидравлика/пневматика), простая конструкция и продуманные программные опции сводят случайные ошибки к минимуму."
+          }
+        }
+      ],
+      "sizes": [
+        { "model": "CM 03", "torque": "up to 32 Nm" },
+        { "model": "CM 06", "torque": "up to 64 Nm" },
+        { "model": "CM 12", "torque": "up to 125 Nm" }
+      ]
+    },
+    "ab": {
+      "slug": "ab-series",
+      "name": "AB Series",
+      "tagline": {
+        "en": "Traditional & Robust",
+        "ru": "Традиционность и надёжность"
+      },
+      "description": {
+        "en": "The AB series is the traditional product successfully deployed worldwide with satisfied customers. This product series is continuously developed and optimized for various applications. Its particularly robust construction makes the actuators the first choice for heavy-duty applications.",
+        "ru": "Серия AB — традиционный продукт, успешно применяемый по всему миру довольными клиентами. Эта серия продукции постоянно развивается и оптимизируется для различных применений. Её особенно прочная конструкция делает приводы первым выбором для тяжёлых условий эксплуатации."
+      },
+      "features": [
+        {
+          "title": { "en": "Performance", "ru": "Производительность" },
+          "content": {
+            "en": "The electric actuators of the AB series meet all users who need strong performance with maximum robustness. Components manufactured with highest quality at SCHIEBEL guarantee these properties and allow very high torque through generous mechanical dimensioning.",
+            "ru": "Электрические приводы серии AB отвечают потребностям всех пользователей, которым нужна высокая производительность при максимальной надёжности. Компоненты, изготовленные с высочайшим качеством в SCHIEBEL, гарантируют эти свойства и обеспечивают очень высокий крутящий момент благодаря щедрому механическому размерированию."
+          }
+        },
+        {
+          "title": { "en": "Robustness", "ru": "Прочность" },
+          "content": {
+            "en": "The AB series fulfills any special requirement thanks to its intelligent, flexible construction. Generously dimensioned, robust and resistant drive components guarantee maximum longevity.",
+            "ru": "Серия AB выполняет любые специальные требования благодаря интеллектуальной, гибкой конструкции. Щедро размерённые, прочные и устойчивые компоненты привода гарантируют максимальную долговечность."
+          }
+        },
+        {
+          "title": { "en": "Safety", "ru": "Безопасность" },
+          "content": {
+            "en": "The actuator can be delivered Ex-protected with pressure-encapsulated control—use in the hydrogen sector requiring gas classification IIC according to ATEX is possible without problems. AB actuators achieve safety level SIL-2, with Failsafe function SIL-3.",
+            "ru": "Привод может поставляться во взрывозащищённом исполнении с герметичным управлением — использование в водородной отрасли, требующей классификации газа IIC по ATEX, возможно без проблем. Приводы AB достигают уровня безопасности SIL-2, с функцией Failsafe — SIL-3."
+          }
+        },
+        {
+          "title": { "en": "Flexibility", "ru": "Гибкость" },
+          "content": {
+            "en": "The proven control concept of the AB series offers the possibility to use mechanical or electronic reversing contactors. It is also possible to equip the actuators with various voltage systems.",
+            "ru": "Проверенная концепция управления серии AB предоставляет возможность использования механических или электронных реверсивных контакторов. Также возможно оснащение приводов различными системами напряжения."
+          }
+        }
+      ]
+    },
+    "cm": {
+      "slug": "cm-series",
+      "name": "CM Series",
+      "tagline": {
+        "en": "Smart & Flexible",
+        "ru": "Умные и гибкие"
+      },
+      "description": {
+        "en": "The flagship of SCHIEBEL are the CM series actuators, specially developed for complex applications requiring high-performance actuators with small footprint. Using a 3-level concept, customers can configure the perfect actuator for their application.",
+        "ru": "Визитной карточкой SCHIEBEL являются приводы серии CM, специально разработанные для сложных применений, требующих высокопроизводительных приводов с малыми габаритами. С помощью 3-уровневой концепции клиенты могут сконфигурировать идеальный привод для своего применения."
+      },
+      "features": [
+        {
+          "title": { "en": "Design", "ru": "Конструкция" },
+          "content": {
+            "en": "Through intelligent design and high-quality materials, SCHIEBEL increases the lifespan and availability of the CM series to a new level. Low weight and compact form simplify handling and ensure that the electric actuators can play out all advantages even in tight spaces.",
+            "ru": "Благодаря интеллектуальному дизайну и высококачественным материалам SCHIEBEL повышает срок службы и доступность серии CM до нового уровня. Малый вес и компактная форма упрощают обращение и гарантируют, что электрические приводы могут использовать все преимущества даже в ограниченном пространстве."
+          }
+        },
+        {
+          "title": { "en": "Technology", "ru": "Технология" },
+          "content": {
+            "en": "SCHIEBEL pairs the enormous flexibility of CM series electric actuators with high performance. Using brushless DC motor combined with frequency converter, a speed ratio of 1:50 is achieved. This technology allows particularly high positioning speeds with extremely precise control of up to 0.1%.",
+            "ru": "SCHIEBEL сочетает огромную гибкость электрических приводов серии CM с высокой производительностью. С помощью бесщёточного двигателя постоянного тока в сочетании с преобразователем частоты достигается передаточное отношение 1:50. Эта технология позволяет достигать особенно высоких скоростей позиционирования при чрезвычайно точном регулировании до 0,1%."
+          }
+        },
+        {
+          "title": { "en": "Digitalization", "ru": "Цифровизация" },
+          "content": {
+            "en": "CM series actuators can naturally be networked via internet-based bus systems: the required interfaces are available. With BT app and specially developed PC software, SCHIEBEL provides the right answer to today's and future questions regarding Industry 4.0 and Internet of Things.",
+            "ru": "Приводы серии CM, разумеется, могут быть объединены в сеть через интернет-системы полевых шин: необходимые интерфейсы доступны. С помощью BT-приложения и специально разработанного ПО для ПК SCHIEBEL даёт правильный ответ на сегодняшние и будущие вопросы в области Индустрии 4.0 и Интернета вещей."
+          }
+        },
+        {
+          "title": { "en": "Modular System", "ru": "Модульная система" },
+          "content": {
+            "en": "SCHIEBEL's CM actuators are fundamentally modular. Few components, which are also identical across most sizes, face a variety of options that provide customers with exactly the functions they need for their application.",
+            "ru": "Приводы CM от SCHIEBEL изначально модульные. Небольшое количество компонентов, которые к тому же идентичны для большинства типоразмеров, противостоит множеству опций, которые предоставляют клиентам именно те функции, которые им нужны для их применения."
+          }
+        }
+      ],
+      "sizes": [
+        { "model": "CM 03", "torque": "up to 32 Nm" },
+        { "model": "CM 06", "torque": "up to 64 Nm" },
+        { "model": "CM 12", "torque": "up to 125 Nm" }
+      ]
+    },
+    "smartcon": {
+      "slug": "smartcon",
+      "name": "Smartcon",
+      "tagline": {
+        "en": "One Interface Makes It All",
+        "ru": "Один интерфейс решает всё"
+      },
+      "description": {
+        "en": "Smartcon is a modern, reliable and versatile control system that provides valuable information about the integrated drive technology. Developed to combine aspects such as user-friendliness, flexibility and reliability in one control, it has been optimized with numerous additional features over the years.",
+        "ru": "Smartcon — современная, надёжная и универсальная система управления, которая предоставляет ценную информацию об интегрированной технологии привода. Разработанная для объединения таких аспектов, как удобство использования, гибкость и надёжность в одном управлении, она была оптимизирована многочисленными дополнительными функциями на протяжении многих лет."
+      },
+      "features": [
+        {
+          "title": { "en": "Haptics", "ru": "Тактильность" },
+          "content": {
+            "en": "To ensure simple, error-free operation, SCHIEBEL has devoted great attention to haptics. For example, operation via switches in the field is possible with PPE in any environment.",
+            "ru": "Для обеспечения простой, безошибочной работы SCHIEBEL уделил большое внимание тактильности. Например, управление через переключатели в полевых условиях возможно со средствами индивидуальной защиты в любых условиях."
+          }
+        },
+        {
+          "title": { "en": "Technology", "ru": "Технология" },
+          "content": {
+            "en": "SCHIEBEL's electric actuators have a high degree of intelligence—and this is by no means only useful in case of malfunction. The Smartcon control is responsible for this. With integrated IR and BT technology and menu-guided project-oriented SW tools, parameterization in the field is particularly simple and safe.",
+            "ru": "Электрические приводы SCHIEBEL обладают высокой степенью интеллекта — и это полезно не только в случае неисправности. За это отвечает управление Smartcon. Благодаря интегрированной ИК- и BT-технологии и программным инструментам с меню-ориентированным проектным интерфейсом параметризация в полевых условиях особенно проста и безопасна."
+          }
+        },
+        {
+          "title": { "en": "Digitalization", "ru": "Цифровизация" },
+          "content": {
+            "en": "Open protocol structures in software or control can be integrated into existing customer systems—following the trend towards comprehensive networking. Interfaces to a variety of serial and TCP-based fieldbus systems are available, including Profibus, Modbus RTU, Modbus TCP, Ethernet/IP, DeviceNET, Ethernet Powerlink and HART protocol.",
+            "ru": "Открытые структуры протоколов в программном обеспечении или управлении могут быть интегрированы в существующие системы клиентов — следуя тренду к всеобъемлющему сетевому объединению. Доступны интерфейсы к множеству последовательных и TCP-систем полевых шин, включая Profibus, Modbus RTU, Modbus TCP, Ethernet/IP, DeviceNET, Ethernet Powerlink и протокол HART."
+          }
+        },
+        {
+          "title": { "en": "Security", "ru": "Безопасность" },
+          "content": {
+            "en": "Security is particularly important in the IoT era. To protect the control from unauthorized access, SCHIEBEL relies on BT communication and password protection. A sophisticated multi-level system of different user levels ensures visibility or parameterization only for authorized users.",
+            "ru": "Безопасность особенно важна в эпоху IoT. Для защиты управления от несанкционированного доступа SCHIEBEL использует BT-коммуникацию и защиту паролем. Продуманная многоуровневая система различных уровней пользователей обеспечивает видимость или параметризацию только для авторизованных пользователей."
+          }
+        }
+      ],
+      "protocols": ["Profibus", "Modbus RTU", "Modbus TCP", "Ethernet/IP", "DeviceNET", "Ethernet Powerlink", "HART"]
+    },
+    "firmware": {
+      "slug": "firmware",
+      "name": "Firmware 1.600",
+      "tagline": {
+        "en": "Customer Experience at Its Best",
+        "ru": "Клиентский опыт на высшем уровне"
+      },
+      "features": [
+        {
+          "title": { "en": "Individual User Interface", "ru": "Индивидуальный интерфейс пользователя" },
+          "content": {
+            "en": "Up to 8 customer-specific user levels with user-relevant permissions—from read-only permission for selected data to comprehensive permission for setting parameters.",
+            "ru": "До 8 клиентских уровней пользователей с соответствующими правами — от разрешения только на чтение выбранных данных до полных прав на настройку параметров."
+          }
+        },
+        {
+          "title": { "en": "Extended History Function", "ru": "Расширенная функция истории" },
+          "content": {
+            "en": "Expansion to 500 entries—five times more than in the previous version. Detailed information about backups, password and parameter changes, clearing the history.",
+            "ru": "Расширение до 500 записей — в пять раз больше, чем в предыдущей версии. Подробная информация о резервных копиях, изменениях паролей и параметров, очистке истории."
+          }
+        },
+        {
+          "title": { "en": "Comprehensive Error Diagnosis", "ru": "Комплексная диагностика ошибок" },
+          "content": {
+            "en": "16 additional feedback options at binary outputs. Different binary signals can be logically linked and output as one output signal. Full remote access to all parameters via bus communication.",
+            "ru": "16 дополнительных возможностей обратной связи на бинарных выходах. Различные бинарные сигналы могут быть логически связаны и выведены как один выходной сигнал. Полный удалённый доступ ко всем параметрам через шинную коммуникацию."
+          }
+        },
+        {
+          "title": { "en": "Invertible LCD Display", "ru": "Инвертируемый LCD-дисплей" },
+          "content": {
+            "en": "The absolute novelty in the industry—the dark display. Better readability in direct sunlight. Reorganized and extended display of the graphical user interface.",
+            "ru": "Абсолютная новинка в отрасли — тёмный дисплей. Лучшая читаемость при прямом солнечном свете. Реорганизованное и расширенное отображение графического интерфейса пользователя."
+          }
+        }
+      ]
+    }
+  },
+  "applications": {
+    "title": {
+      "en": "Application Areas",
+      "ru": "Области применения"
+    },
+    "description": {
+      "en": "Our unique portfolio enables deployment in almost every industry. The modular concept of our products ensures universal use with different requirements. We integrate comprehensive software solutions into each of our actuators, allowing additional functions to be unlocked even during operation.",
+      "ru": "Наш уникальный портфель позволяет использовать приводы практически в любой отрасли. Модульная концепция нашей продукции обеспечивает универсальное применение с различными требованиями. Мы интегрируем комплексные программные решения в каждый из наших приводов, что позволяет разблокировать дополнительные функции даже во время эксплуатации."
+    },
+    "areas": [
+      {
+        "id": "water",
+        "title": { "en": "Water & Wastewater", "ru": "Водоснабжение и водоотведение" },
+        "description": {
+          "en": "Our actuators feature long service life and are specially protected against corrosion through careful surface treatment.",
+          "ru": "Наши приводы отличаются длительным сроком службы и особенно защищены от коррозии благодаря тщательной обработке поверхности."
+        },
+        "icon": "droplet"
+      },
+      {
+        "id": "power",
+        "title": { "en": "Power Plants", "ru": "Электростанции" },
+        "description": {
+          "en": "Reliability is a core topic in power plant construction. We have all necessary certifications to protect personnel and plant components.",
+          "ru": "Надёжность — ключевая тема в строительстве электростанций. Мы имеем все необходимые сертификаты для защиты персонала и компонентов установок."
+        },
+        "icon": "zap"
+      },
+      {
+        "id": "oil-gas",
+        "title": { "en": "Oil & Gas", "ru": "Нефть и газ" },
+        "description": {
+          "en": "For this application, our reliable actuators are particularly valued for their innovative safety system and easy maintenance.",
+          "ru": "Для этого применения наши надёжные приводы особенно ценятся за инновационную систему безопасности и простое техническое обслуживание."
+        },
+        "icon": "flame"
+      },
+      {
+        "id": "district-heating",
+        "title": { "en": "District Heating", "ru": "Теплоснабжение" },
+        "description": {
+          "en": "SCHIEBEL actuators are particularly suitable for remote diagnostics thanks to integrated control and can perfectly control decentralized processes.",
+          "ru": "Приводы SCHIEBEL особенно подходят для удалённой диагностики благодаря интегрированному управлению и могут идеально контролировать децентрализованные процессы."
+        },
+        "icon": "thermometer"
+      },
+      {
+        "id": "tunnel",
+        "title": { "en": "Tunnel Construction", "ru": "Тоннелестроение" },
+        "description": {
+          "en": "Every tunnel construction is unique. We develop individual, customer-specific special solutions for complex tasks with our know-how.",
+          "ru": "Каждое строительство тоннеля уникально. Мы разрабатываем индивидуальные, клиентские специальные решения для сложных задач с нашим ноу-хау."
+        },
+        "icon": "mountain"
+      },
+      {
+        "id": "chemical",
+        "title": { "en": "Chemical Industry", "ru": "Химическая промышленность" },
+        "description": {
+          "en": "SCHIEBEL actuators meet all general and customer-specific safety certificates. We are a reliable partner for maximum safety.",
+          "ru": "Приводы SCHIEBEL соответствуют всем общим и клиентским сертификатам безопасности. Мы — надёжный партнёр для максимальной безопасности."
+        },
+        "icon": "flask"
+      },
+      {
+        "id": "steel",
+        "title": { "en": "Steel Plants", "ru": "Металлургические заводы" },
+        "description": {
+          "en": "Our actuators can be individually expanded through numerous components and software solutions, enabling safe deployment worldwide.",
+          "ru": "Наши приводы могут быть индивидуально расширены многочисленными компонентами и программными решениями, обеспечивая безопасное использование по всему миру."
+        },
+        "icon": "factory"
+      },
+      {
+        "id": "paper",
+        "title": { "en": "Paper Industry", "ru": "Бумажная промышленность" },
+        "description": {
+          "en": "Low weight, compact forms and internet-based bus systems via interfaces enable deployment even in confined spaces.",
+          "ru": "Малый вес, компактные формы и интернет-системы полевых шин через интерфейсы позволяют использовать приводы даже в ограниченном пространстве."
+        },
+        "icon": "file-text"
+      },
+      {
+        "id": "shipbuilding",
+        "title": { "en": "Shipbuilding", "ru": "Судостроение" },
+        "description": {
+          "en": "Intelligent design and high-quality materials significantly increase the service life and maintenance-free operation of our actuators.",
+          "ru": "Интеллектуальный дизайн и высококачественные материалы значительно увеличивают срок службы и безремонтную эксплуатацию наших приводов."
+        },
+        "icon": "anchor"
+      }
+    ]
+  },
+  "references": [
+    { "company": "Regas", "country": "Italy", "industry": "Oil & Gas", "sector": "Midstream", "products": "CM Series" },
+    { "company": "British Petroleum", "country": "United Kingdom", "industry": "Oil & Gas", "sector": "Downstream", "products": "AB & CM Failsafe" },
+    { "company": "Siemens", "country": "Germany", "industry": "Power Plants", "sector": "Combined cycle power plant", "products": "AB, CM & CM Failsafe" },
+    { "company": "Terna", "country": "Greece", "industry": "Power Plants", "sector": "Coal fired power plant", "products": "AB & AB Failsafe" },
+    { "company": "Voith Hydro", "country": "Austria", "industry": "Power Plants", "sector": "Pelton turbines", "products": "CM & CM Failsafe" },
+    { "company": "Athens Waterworks", "country": "Greece", "industry": "Water & Wastewater", "sector": "Drinking water", "products": "CM" },
+    { "company": "City of Subotica", "country": "Serbia", "industry": "Water & Wastewater", "sector": "Waste water", "products": "AB" },
+    { "company": "ILF", "country": "Austria", "industry": "Water & Wastewater", "sector": "Artificial snow systems", "products": "AB" },
+    { "company": "BASF", "country": "Germany", "industry": "Chemical", "sector": "Chemical & petrochemical", "products": "AB Failsafe" },
+    { "company": "Panjapol Paper", "country": "Thailand", "industry": "Paper", "sector": "Pulp & paper", "products": "AB" },
+    { "company": "Voest Alpine Stahl", "country": "Austria", "industry": "Steel", "sector": "Metal & steel", "products": "AB" },
+    { "company": "ThyssenKrupp Marine Services", "country": "Germany", "industry": "Shipbuilding", "sector": "Ship building", "products": "CM" },
+    { "company": "Sirocco Luft- und Tunneltechnik", "country": "Austria", "industry": "Tunnel Construction", "sector": "Tunnel ventilation", "products": "AB, CM, AB Failsafe & CM Failsafe" },
+    { "company": "Allied Engineering Consultant", "country": "UAE", "industry": "District Heating", "sector": "HVAC, district heating & cooling", "products": "AB, CM" }
+  ]
+}
