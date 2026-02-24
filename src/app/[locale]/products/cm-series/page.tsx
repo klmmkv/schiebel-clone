@@ -1,0 +1,124 @@
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Cpu, Cog, Wifi, Puzzle, ArrowLeft } from 'lucide-react';
+
+export default function CMSeriesPage() {
+  const t = useTranslations('products.cm');
+  const common = useTranslations('common');
+  const products = useTranslations('products');
+
+  const features = [
+    { key: 'design', icon: Cog },
+    { key: 'technology', icon: Cpu },
+    { key: 'digitalization', icon: Wifi },
+    { key: 'modular', icon: Puzzle },
+  ];
+
+  const sizes = [
+    { model: 'CM 03', torque: 'up to 32 Nm' },
+    { model: 'CM 06', torque: 'up to 64 Nm' },
+    { model: 'CM 12', torque: 'up to 125 Nm' },
+  ];
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <Link href="/" className="inline-flex items-center text-gray-300 hover:text-white mb-6">
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            {common('backToProducts')}
+          </Link>
+          <Badge className="mb-4 bg-green-500 hover:bg-green-600">Flagship Product</Badge>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('name')}</h1>
+          <p className="text-2xl text-[#f97316] font-medium mb-4">{t('tagline')}</p>
+          <p className="text-xl text-gray-300 max-w-3xl">{t('description')}</p>
+        </div>
+      </section>
+
+      {/* Key Benefits */}
+      <section className="py-8 bg-green-500 text-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-8 text-center">
+            <div>
+              <div className="text-2xl font-bold">1:50</div>
+              <div className="text-green-100">Speed Ratio</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold">0.1%</div>
+              <div className="text-green-100">Precision Control</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold">3-Level</div>
+              <div className="text-green-100">Configuration</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Grid */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {features.map((feature) => (
+              <Card key={feature.key} className="h-full">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-lg bg-green-500 flex items-center justify-center mb-4">
+                    <feature.icon className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle className="text-xl text-[#1a365d]">
+                    {t(`${feature.key}.title`)}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">{t(`${feature.key}.content`)}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sizes */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1a365d] mb-8 text-center">
+            {products('sizes')}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            {sizes.map((size) => (
+              <Card key={size.model} className="text-center">
+                <CardContent className="pt-6">
+                  <div className="text-3xl font-bold text-[#1a365d] mb-2">{size.model}</div>
+                  <div className="text-gray-600">
+                    <span className="font-medium">{products('torque')}:</span> {size.torque}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-[#1a365d] text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Ready to configure your CM Series actuator?
+          </h2>
+          <p className="text-gray-300 mb-8">
+            Our 3-level concept lets you create the perfect solution for your needs.
+          </p>
+          <Button asChild size="lg" className="bg-[#f97316] hover:bg-[#ea580c]">
+            <a href="mailto:info@schiebel-actuators.com">
+              {common('contactUs')}
+            </a>
+          </Button>
+        </div>
+      </section>
+    </div>
+  );
+}
