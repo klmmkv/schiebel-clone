@@ -1,5 +1,5 @@
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { useTranslations, useLocale } from 'next-intl';
+import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -8,6 +8,7 @@ import { Zap, Cog, Shield, Settings, ArrowLeft } from 'lucide-react';
 export default function ABSeriesPage() {
   const t = useTranslations('products.ab');
   const common = useTranslations('common');
+  const locale = useLocale();
 
   const features = [
     { key: 'performance', icon: Zap },
@@ -21,7 +22,7 @@ export default function ABSeriesPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1a365d] to-[#2d4a7c] text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <Link href="/products/cm-series" className="inline-flex items-center text-gray-300 hover:text-white mb-6">
+          <Link href={`/${locale}`} className="inline-flex items-center text-gray-300 hover:text-white mb-6">
             <ArrowLeft className="h-4 w-4 mr-2" />
             {common('backToProducts')}
           </Link>

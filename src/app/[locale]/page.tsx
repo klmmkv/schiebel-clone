@@ -1,5 +1,5 @@
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { useTranslations, useLocale } from 'next-intl';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -9,33 +9,34 @@ export default function HomePage() {
   const t = useTranslations('home');
   const nav = useTranslations('nav');
   const apps = useTranslations('applications');
+  const locale = useLocale();
 
   const products = [
     {
       name: 'Failsafe Series',
       tagline: 'Safe & Reliable',
-      href: '/products/failsafe-series',
+      href: `/${locale}/products/failsafe-series`,
       icon: Shield,
       color: 'bg-red-500',
     },
     {
       name: 'AB Series',
       tagline: 'Traditional & Robust',
-      href: '/products/ab-series',
+      href: `/${locale}/products/ab-series`,
       icon: Cog,
       color: 'bg-blue-500',
     },
     {
       name: 'CM Series',
       tagline: 'Smart & Flexible',
-      href: '/products/cm-series',
+      href: `/${locale}/products/cm-series`,
       icon: Cpu,
       color: 'bg-green-500',
     },
     {
       name: 'Smartcon',
       tagline: 'One Interface Makes It All',
-      href: '/products/smartcon',
+      href: `/${locale}/products/smartcon`,
       icon: Settings,
       color: 'bg-purple-500',
     },
@@ -66,13 +67,13 @@ export default function HomePage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-[#f97316] hover:bg-[#ea580c]">
-                <Link href="/products/cm-series">
+                <Link href={`/${locale}/products/cm-series`}>
                   {t('hero.cta')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-                <Link href="/about">
+                <Link href={`/${locale}/about`}>
                   {nav('aboutUs')}
                 </Link>
               </Button>
@@ -148,7 +149,7 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <Button asChild variant="outline" size="lg">
-              <Link href="/applications">
+              <Link href={`/${locale}/applications`}>
                 {t('applications.viewAll')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
