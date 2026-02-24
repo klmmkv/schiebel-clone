@@ -38,7 +38,7 @@ export default function SmartconPage() {
             <ArrowLeft className="h-4 w-4 mr-2" />
             {common('backToProducts')}
           </Link>
-          <Badge className="mb-4 bg-purple-500 hover:bg-purple-600">Control System</Badge>
+          <Badge className="mb-4 bg-purple-500 hover:bg-purple-600">{t('badge')}</Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('name')}</h1>
           <p className="text-2xl text-[#f97316] font-medium mb-4">{t('tagline')}</p>
           <p className="text-xl text-gray-300 max-w-3xl">{t('description')}</p>
@@ -96,22 +96,22 @@ export default function SmartconPage() {
               <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-4">
                 <Wifi className="h-8 w-8 text-purple-500" />
               </div>
-              <h3 className="text-lg font-semibold text-[#1a365d] mb-2">IR & BT Integration</h3>
-              <p className="text-gray-600">Integrated infrared and Bluetooth technology for easy parameterization</p>
+              <h3 className="text-lg font-semibold text-[#1a365d] mb-2">{t('irBtTitle')}</h3>
+              <p className="text-gray-600">{t('irBtDesc')}</p>
             </div>
             <div className="p-6">
               <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-4">
                 <Cpu className="h-8 w-8 text-purple-500" />
               </div>
-              <h3 className="text-lg font-semibold text-[#1a365d] mb-2">Industry 4.0 Ready</h3>
-              <p className="text-gray-600">Prepared for IoT and comprehensive networking solutions</p>
+              <h3 className="text-lg font-semibold text-[#1a365d] mb-2">{t('industry40Title')}</h3>
+              <p className="text-gray-600">{t('industry40Desc')}</p>
             </div>
             <div className="p-6">
               <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-4">
                 <Lock className="h-8 w-8 text-purple-500" />
               </div>
-              <h3 className="text-lg font-semibold text-[#1a365d] mb-2">Multi-Level Security</h3>
-              <p className="text-gray-600">Sophisticated user level system for authorized access only</p>
+              <h3 className="text-lg font-semibold text-[#1a365d] mb-2">{t('multiLevelTitle')}</h3>
+              <p className="text-gray-600">{t('multiLevelDesc')}</p>
             </div>
           </div>
         </div>
@@ -121,10 +121,10 @@ export default function SmartconPage() {
       <section className="py-16 bg-[#1a365d] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Want to learn more about Smartcon?
+            {t('ctaTitle')}
           </h2>
           <p className="text-gray-300 mb-8">
-            Discover how our intelligent control system can enhance your operations.
+            {t('ctaSubtitle')}
           </p>
           <Button asChild size="lg" className="bg-[#f97316] hover:bg-[#ea580c]">
             <a href="mailto:info@schiebel-actuators.com">
